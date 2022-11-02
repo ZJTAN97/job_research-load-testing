@@ -1,0 +1,68 @@
+2022-11-02 16:05:02,068 INFO com.loadtest.demo.DemoApplicationTests [main] Starting DemoApplicationTests on XT-C0180382A891 with PID 21856 (started by tan.zj in C:\Users\tan.zj\Documents\GitHub\job_research-load-testing-tools\taurus)
+2022-11-02 16:05:02,070 DEBUG com.loadtest.demo.DemoApplicationTests [main] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-11-02 16:05:02,070 INFO com.loadtest.demo.DemoApplicationTests [main] No active profile set, falling back to default profiles: default
+2022-11-02 16:05:04,764 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-02 16:05:05,014 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-02 16:05:05,167 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-11-02 16:05:05,359 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2022-11-02 16:05:05,363 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2022-11-02 16:05:05,679 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-11-02 16:05:06,011 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-02 16:05:07,106 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@68c4db77'
+2022-11-02 16:05:10,878 INFO com.loadtest.demo.DemoApplicationTests [main] Started DemoApplicationTests in 9.243 seconds (JVM running for 11.949)
+2022-11-02 16:05:10,889 DEBUG com.loadtest.demo.config.PopulateDatabase [main] Populating the database with 20K Dummy Records ... In Progress
+2022-11-02 16:05:13,576 DEBUG com.loadtest.demo.config.PopulateDatabase [main] Database filled up!
+2022-11-02 16:05:13,948 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-2] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-02 16:05:13,952 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] SQL Error: 90121, SQLState: 90121
+2022-11-02 16:05:13,953 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2022-11-02 16:05:13,958 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] SQL Error: 90121, SQLState: 90121
+2022-11-02 16:05:13,960 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2022-11-02 16:05:13,962 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2022-11-02 16:05:13,977 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
+2022-11-02 18:14:51,264 INFO com.loadtest.demo.DemoApplicationTests [main] Starting DemoApplicationTests on XT-C0180382A891 with PID 7908 (started by tan.zj in C:\Users\tan.zj\Documents\GitHub\job_research-load-testing-tools\taurus)
+2022-11-02 18:14:51,265 DEBUG com.loadtest.demo.DemoApplicationTests [main] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-11-02 18:14:51,266 INFO com.loadtest.demo.DemoApplicationTests [main] No active profile set, falling back to default profiles: default
+2022-11-02 18:14:53,675 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-02 18:14:54,002 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-02 18:14:54,154 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-11-02 18:14:54,288 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2022-11-02 18:14:54,290 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2022-11-02 18:14:54,538 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-11-02 18:14:54,818 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-02 18:14:55,722 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@b339a08'
+2022-11-02 18:14:59,101 INFO com.loadtest.demo.DemoApplicationTests [main] Started DemoApplicationTests in 8.214 seconds (JVM running for 9.184)
+2022-11-02 18:14:59,107 DEBUG com.loadtest.demo.config.PopulateDatabase [main] Populating the database with 20K Dummy Records ... In Progress
+2022-11-02 18:15:01,082 DEBUG com.loadtest.demo.config.PopulateDatabase [main] Database filled up!
+2022-11-02 18:15:01,312 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-2] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-02 18:15:01,317 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] SQL Error: 90121, SQLState: 90121
+2022-11-02 18:15:01,317 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2022-11-02 18:15:01,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] SQL Error: 90121, SQLState: 90121
+2022-11-02 18:15:01,319 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Thread-2] Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2022-11-02 18:15:01,319 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2022-11-02 18:15:01,322 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
+2022-11-02 18:15:38,955 INFO com.loadtest.demo.DemoApplication [main] Starting DemoApplication on XT-C0180382A891 with PID 20804 (C:\Users\tan.zj\Documents\GitHub\job_research-load-testing-tools\taurus\target\classes started by tan.zj in C:\Users\tan.zj\Documents\GitHub\job_research-load-testing-tools\taurus)
+2022-11-02 18:15:38,957 DEBUG com.loadtest.demo.DemoApplication [main] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-11-02 18:15:38,958 INFO com.loadtest.demo.DemoApplication [main] No active profile set, falling back to default profiles: default
+2022-11-02 18:15:41,107 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-11-02 18:15:41,108 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-11-02 18:15:41,241 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-11-02 18:15:41,945 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-02 18:15:42,141 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-02 18:15:42,238 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-11-02 18:15:42,365 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2022-11-02 18:15:42,367 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2022-11-02 18:15:42,573 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-11-02 18:15:42,784 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-02 18:15:43,358 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6f80cf5'
+2022-11-02 18:15:44,486 INFO com.loadtest.demo.DemoApplication [main] Started DemoApplication in 6.016 seconds (JVM running for 6.556)
+2022-11-02 18:15:44,501 DEBUG com.loadtest.demo.config.PopulateDatabase [main] Populating the database with 20K Dummy Records ... In Progress
+2022-11-02 18:15:46,181 DEBUG com.loadtest.demo.config.PopulateDatabase [main] Database filled up!
+2022-11-02 18:28:54,464 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-3] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-02 18:28:54,471 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
+2022-11-02 18:28:54,476 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
