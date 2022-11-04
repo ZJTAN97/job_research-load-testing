@@ -1,0 +1,18 @@
+scenarios:
+  UsersList:
+    requests:
+      - url: http://localhost:8080/api/users
+#      - url: http://demo-app:8080/api/users
+        label: Users List
+execution:
+  - scenario: UsersList
+    concurrency: 100
+    ramp-up: 2s
+    hold-for: 5m20s
+reporting:
+  - module: console
+  - module: final-stats
+    summary: true
+    percentiles: true
+    test-duration: true
+    dump-csv: single_scenario_single_req.csv

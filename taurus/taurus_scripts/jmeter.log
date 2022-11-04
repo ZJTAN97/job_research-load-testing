@@ -1,2 +1,0 @@
-2022-11-02 10:22:47,402 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
-2022-11-02 10:22:47,454 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=linux-719623f5d3e4a453edef09ce6832b052-nongui
