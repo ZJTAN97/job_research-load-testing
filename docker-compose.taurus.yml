@@ -11,7 +11,7 @@ services:
   demo_app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: load-testing/Dockerfile
     container_name: demo-app
     ports:
       - "8080:8080"
