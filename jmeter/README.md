@@ -11,3 +11,15 @@
 ```
 ./jmeter -n -t sample_plan.jmx -l sample_plan.csv -e -o sample
 ```
+
+<br>
+
+## Using Docker Image
+
+````
+docker pull swethapn14/repo_perf:JmeterLatest
+
+
+docker run -v ./jmeter-base swethapn14/repo_perf:JmeterLatest -Jthreads=10 -Jrampup=20 -n -t /workspace/TestBlazedemo/Blazedemo.jmx -l /workspace/logs/Blazedemo_10Vu.jtl -e -o /workspace/html/10VuReport
+
+````
