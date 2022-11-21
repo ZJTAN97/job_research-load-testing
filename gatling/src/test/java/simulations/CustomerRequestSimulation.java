@@ -1,4 +1,4 @@
-package scripts;
+package simulations;
 
 import java.time.Duration;
 
@@ -10,8 +10,7 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
 
-
-public class UserRequestSimulation extends Simulation {
+public class CustomerRequestSimulation extends Simulation {
 
     // shared base configuration of all upcoming HTTP requests
     HttpProtocolBuilder httpProtocol = HttpDsl.http
@@ -20,33 +19,33 @@ public class UserRequestSimulation extends Simulation {
             .userAgentHeader("Gatling/Performance Test");
 
 
-    FeederBuilder<String> feeder = csv("user.csv").random();
+    FeederBuilder<String> feeder = csv("customer.csv").random();
 
 
     // GET
     ChainBuilder get = exec(
-            http("get-user-request")
-                    .get("/api/users")
+            http("get-customer-request")
+                    .get("/api/customers")
                     .check(status().is(200)));
 
     // POST
     ChainBuilder post = feed(feeder)
             .exec(
-                    http("create-user-request")
-                            .post("/api/users")
+                    http("create-customer-request")
+                            .post("/api/customers")
                             .header("Content-Type", "application/json")
                             .body(StringBody(
                                     "{ \"name\": \"#{name}\", \"age\": \"#{age}\", \"bio\": \"#{bio}\" }"
                             ))
                             .check(status().is(201)));
 
-    ScenarioBuilder scn = scenario("Load Test Creating and Getting users").exec(get, post);
-    ScenarioBuilder scn2 = scenario("Load Test Creating and Getting users with ramp up effect").exec(get, post);
+    ScenarioBuilder scn = scenario("Load Test Creating and Getting customers").exec(get, post);
+    ScenarioBuilder scn2 = scenario("Load Test Creating and Getting customers with ramp up effect").exec(get, post);
 
 
     {
         setUp(
-                scn.injectOpen(constantUsersPerSec(100).during(Duration.ofSeconds(35))),
+                scn.injectOpen(constantUsersPerSec(2).during(Duration.ofSeconds(35))),
                 scn2.injectOpen(rampUsers(2).during(10))
         ).protocols(httpProtocol);
     }
