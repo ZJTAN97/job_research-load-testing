@@ -28,7 +28,7 @@ public class PopulateDB implements ApplicationRunner {
         log.info("[INFO] Populating MongoDB with fake users.");
 
         List<User> users = new ArrayList<>();
-        IntStream.range(1, 10).forEach(id -> {
+        IntStream.range(1, 101).forEach(id -> {
             User user = User.builder()
                     .name("name" + String.valueOf(id))
                     .bio("bio" + String.valueOf(id))
@@ -38,7 +38,7 @@ public class PopulateDB implements ApplicationRunner {
         });
         userRepository.saveAll(users);
 
-        log.info("[SUCCESS] Application running with 99 fake users.");
+        log.info("[SUCCESS] Application running with 100 fake users.");
         log.info("[INFO] Application started on port 8080");
 
     }

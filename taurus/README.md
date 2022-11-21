@@ -1,7 +1,7 @@
 # Taurus installation using Docker image
 
 ```
-docker run -it --rm -v C:/Users/tan.zj/Documents/GitHub/job_research-load-testing-tools/taurus/taurus_scripts:/bzt-configs blazemeter/taurus multi_scenario_req.yaml
+docker run -it --rm -v C:/Users/tan.zj/Documents/GitHub/job_research-load-testing-tools/taurus:/bzt-configs blazemeter/taurus multi_scenario_req.yaml
 docker run -it --rm -v C:/Users/tan.zj/Downloads/taurus_resources:/bzt-configs blazemeter/taurus 
 docker run -it --rm -v `pwd`:/TaurusLoadTesting blazemeter/taurus /TaurusLoadTesting/profile/sanity.yml /TaurusLoadTesting/common/scenarios.yml /TaurusLoadTesting/variable/development.yml
 ```

@@ -22,7 +22,7 @@ services:
   taurus:
     image: blazemeter/taurus
     container_name: taurus
-    command: /TaurusLoadTesting/taurus_scripts/sample_execution.yaml
+    command: /TaurusLoadTesting/taurus/sample_execution.yaml
     volumes:
       - .:/TaurusLoadTesting
     depends_on:
